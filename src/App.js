@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{ useState, useEffect} from 'react';
+import TodayPickups_cells from './components/todayPickup_cells'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+  const [order, setOrder] = useState(0)
+
+  useEffect(()=>{
+    setOrder(1)
+  },[])
+    return (
+     
+      <TodayPickups_cells ordernum ={order}/>
+      )
+  }
+  
+
 
 export default App;

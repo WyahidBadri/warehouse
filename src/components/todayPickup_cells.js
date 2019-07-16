@@ -3,7 +3,6 @@ import './todayPickups_cell.css'
 
 export default function TodayPickups_cells(props){
 
-
     return(
         <div className="container-pickups">
 
@@ -13,7 +12,7 @@ export default function TodayPickups_cells(props){
 
             {/* hourly time military */}
                  <h2>0000</h2> 
-                 
+
             </div>
 
         </div>

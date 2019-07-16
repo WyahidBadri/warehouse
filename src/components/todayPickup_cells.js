@@ -10,8 +10,10 @@ export default function TodayPickups_cells(props){
         <div className="pickup-flex-box">
 
             <div className="time-col">
+
             {/* hourly time military */}
                  <h2>0000</h2> 
+                 
             </div>
 
         </div>
@@ -21,6 +23,7 @@ export default function TodayPickups_cells(props){
 
              <h2>Order#</h2> 
              <h2>number</h2> {/* Pickup order id */}
+
              <h2>Client:</h2>
              <h2>name</h2> {/*Client name */}
 
@@ -28,10 +31,13 @@ export default function TodayPickups_cells(props){
 
            <h2>Pickup:</h2> 
            <h2>Time</h2> {/*Scheduled order pickup time */}
+
            <h2>Trucking:</h2> 
            <h2>Truck co.</h2> {/*Transportation company picking up the order */}
+
            <h2>Driver:</h2>
            <h2>Guy</h2> {/*Driver name */}
+
            <h2>Delivery:</h2>
            <h2>mm/dd/yyyy</h2> {/*Date of pickup */}
 
